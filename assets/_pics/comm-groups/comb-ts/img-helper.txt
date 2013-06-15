@@ -1,0 +1,11 @@
+001 - shema-raspolozheniya-oborudavaniya
+006 - shema-kamera-polimerizacii
+009 - shema-kamera-napileniya
+
+
+003 - gotovii-kompleks
+005 - kamera-polimerizacii
+011 - kamera-napileniya-foto1
+012 - kamera-napileniya-foto2
+015 - transportnaya-sistema
+018 - pistolet-raspilitel

@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /logs
+Disallow: /assets
+Disallow: /staff
+Disallow: /contacts
+Disallow: /news
+Disallow: /test
+Disallow: /catalog/postavki-iz-kitaya
+Sitemap: http://vladcom.su/sitemap.xml
+Host: vladcom.su
