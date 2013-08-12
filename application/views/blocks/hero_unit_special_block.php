@@ -3,7 +3,9 @@
         <table>
             <tr>
                 <td width="37%">
-                    <img width="100%" src="/assets/pics/comm-groups/kompleks-s-kombinirovannojj-transportnojj-sistemojj.jpg" alt="">
+                    <a href="/catalog/3.0x1.6x1.8-kompleks-s-kombinirovannojj-transportnojj-sistemoj" title="Комплекс с комбинированной транспортной системой всего за <?=convertDollarToRubel($content['special']['price'], $course)?>">
+                        <img width="100%" src="/assets/pics/comm-groups/kompleks-s-kombinirovannojj-transportnojj-sistemojj.jpg" alt="">
+                    </a>
                 </td>
                 <td width="3%"></td>
                 <td width="60%">
