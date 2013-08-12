@@ -16,7 +16,7 @@
                     <p class="contact-p"><?=$header['phone1']?></p>
                     <p class="contact-p"><?=$header['phone2']?></p>
                     <p class="contact-p"><?=$header['phone3']?></p>
-                    <p class="contact-email"><a href="mailto:sales@vladcom.su" title="Написать письмо">sales@vladcom.su</a></p>
+                    <p class="contact-email"><a href="mailto:<?=$header['email']?>" title="Написать письмо"><?=$header['email']?></a></p>
                 </div>
             </div>
         </div>
