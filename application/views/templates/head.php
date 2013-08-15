@@ -8,7 +8,7 @@
     <meta name="keywords" content="<?=$meta_keywords?>" />
     <meta name="author" content="Danilov Pavel" />
 
-    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/bootstrap.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/bootstrap.min.css" media="all" />
     <!-- <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/bootstrap-responsive.css" media="all" /> -->
     <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/style.css?css=<?=time()?>" media="all" />
     <!-- <link rel="stylesheet/less" type="text/css" href="<?=base_url()?>assets/css/style.less" media="all" /> -->
