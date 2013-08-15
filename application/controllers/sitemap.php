@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Sitemap extends CI_Controller {
+class Sitemap extends Frontend_Controller {
 
     public $data;
 
