@@ -1,5 +1,5 @@
 <div>
-    <h2><?=$content['section']['name']?></h2>
+    <h1><?=$content['section']['name']?></h1>
         <ul>
         <?php foreach ($content['groups'] as $group) { ?>
             <li>

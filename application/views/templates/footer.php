@@ -21,6 +21,18 @@
             </div>
         </div>
 </div>
+<div class="vcard">
+ <div>
+   <span class="category">Производственно-торговая компания</span>
+   <span class="fn org">Владком</span>
+ </div>
+ <div>Телефон: <span class="tel">+7 (917) 668 37 40</span></div>
+ <div>
+   <span class="url">
+     <span class="value-title" title="http://www.vladcom.su"> </span>
+   </span>
+ </div>
+</div>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
 (function (d, w, c) {

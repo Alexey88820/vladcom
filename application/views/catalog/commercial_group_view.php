@@ -1,4 +1,4 @@
-<h3><?=$content['commercial_group']['title']?></h3>
+<h1><?=$content['commercial_group']['title']?></h1>
 <div>
     <?=$content['commercial_group']['content']?>
 </div>

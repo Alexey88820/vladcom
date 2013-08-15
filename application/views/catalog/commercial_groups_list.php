@@ -1,5 +1,5 @@
 <?php foreach ($content['commercial_groups'] as $group) { ?>
-    <h3><a href="<?=base_url()?>catalog/<?=$group['slug']?>" title="<?=$group['title']?>"><?=$group['title']?></a></h3>
+    <h1><a href="<?=base_url()?>catalog/<?=$group['slug']?>" title="<?=$group['title']?>"><?=$group['title']?></a></h1>
     <div class="row-fluid">
         <div class="span4">
             <img src="<?=base_url()?>assets/pics/comm-groups/<?=$group['img']?>" alt="<?=$group['title']?>">

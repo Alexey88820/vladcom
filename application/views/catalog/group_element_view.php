@@ -1,5 +1,5 @@
 <div>
-    <h3><?=$content['group']['name']?></h3>
+    <h1><?=$content['group']['name']?></h1>
     <table class="table table-bordered">
         <tbody>
         <?php foreach ($content['items'] as $item) { ?>
