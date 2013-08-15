@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('Europe/Moscow');
+
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -18,7 +20,22 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	define('ENVIRONMENT', 'production');
+
+$root = dirname(__FILE__);
+switch ($root) {
+	case 'X:\home\_GitHub\vladcom':
+		define('ENVIRONMENT', 'development');
+		break;
+	case 'D:\server\home\_GitHub\vladcom':
+		define('ENVIRONMENT', 'development');
+		break;
+	case '/Users/paveldanilov/Sites/vladcom':
+		define('ENVIRONMENT', 'development');
+		break;
+	default:
+		define('ENVIRONMENT', 'production');
+		break;
+}
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -28,12 +45,14 @@
  * By default development will show errors but testing and live will hide them.
  */
 
+
+
 if (defined('ENVIRONMENT'))
 {
 	switch (ENVIRONMENT)
 	{
 		case 'development':
-			error_reporting(E_ALL);
+			error_reporting(E_ALL | E_STRICT);
 		break;
 
 		case 'testing':
@@ -45,6 +64,7 @@ if (defined('ENVIRONMENT'))
 			exit('The application environment is not set correctly.');
 	}
 }
+
 
 /*
  *---------------------------------------------------------------
