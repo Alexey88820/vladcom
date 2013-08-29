@@ -12,7 +12,7 @@
                         $value['name'] = '';
                     }
                 ?>
-                <li><a href="<?=base_url()?><?=$value['name']?>" title="<?=$value['description']?>"><?=$value['title']?></a></li>
+                <li><a href="<?=base_url()?><?=$value['name']?>/" title="<?=$value['description']?>"><?=$value['title']?></a></li>
             <?php } ?>
         </ul>
     </div>

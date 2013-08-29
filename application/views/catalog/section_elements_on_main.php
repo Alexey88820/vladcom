@@ -7,7 +7,7 @@
                     <img class="" src="/assets/pics/<?=$section['img']?>" alt="<?=$section['name']?>">
                 </div>
                 <div class="span10">
-                    <h1><a href="<?=base_url()?>catalog/<?=$section['slug']?>" title="<?=$section['name']?>"><?=$section['name']?></a></h1>
+                    <h1><a href="<?=base_url()?>catalog/<?=$section['slug']?>/" title="<?=$section['name']?>"><?=$section['name']?></a></h1>
                     <ul>
                         <?php foreach ($content['blocks']['preview-groups'][$section['id']] as $key => $group) { ?>
                         <?php
@@ -15,7 +15,7 @@
                             continue;
                         }
                         ?>
-                            <li><a href="<?=base_url()?>catalog/<?=$group['slug']?>" title="<?=$group['name']?>"><?=$group['name']?></a></li>
+                            <li><a href="<?=base_url()?>catalog/<?=$group['slug']?>/" title="<?=$group['name']?>"><?=$group['name']?></a></li>
                         <?php } ?>
                     </ul>
                     <div>

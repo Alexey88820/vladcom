@@ -5,7 +5,7 @@
                 if ($level['link']==FALSE) { ?>
                     <li class="active"><?=$level['name']?> <span class="divider">/</span></li>
                 <?php } else { ?>
-                    <li><a href="<?=$level['link']?>" title="<?=$level['name']?>"><?=$level['name']?></a> <span class="divider">/</span></li>
+                    <li><a href="<?=$level['link']?>/" title="<?=$level['name']?>"><?=$level['name']?></a> <span class="divider">/</span></li>
                 <?php } ?>
             <?php } ?>
         </ul>

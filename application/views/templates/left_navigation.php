@@ -6,7 +6,7 @@
         $li = $active ? '<li class="active">' : '<li>';
         ?>
             <?=$li?>
-                <a href="/catalog/<?=$section['slug']?>" title="<?=$section['name']?>"><?=$section['name']?></a>
+                <a href="/catalog/<?=$section['slug']?>/" title="<?=$section['name']?>"><?=$section['name']?></a>
                 <ul class="nav">
                     <?php foreach ($left_nav['groups'][$section['id']] as $group) { ?>
                     <?php
@@ -19,7 +19,7 @@
                     }
                     ?>
                         <?=$li?>
-                            <a href="<?=base_url()?>catalog/<?=$group['slug']?>" title="<?=$group['name']?>"><?=$group['name']?></a>
+                            <a href="<?=base_url()?>catalog/<?=$group['slug']?>/" title="<?=$group['name']?>"><?=$group['name']?></a>
                         </li>
                     <?php } ?>
                 </ul>

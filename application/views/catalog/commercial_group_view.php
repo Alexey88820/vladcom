@@ -16,7 +16,7 @@
             }
             ?>
             <tr>
-                <td><a href="<?=base_url()?>catalog/<?=$item['slug']?>" title="Подробности. <?=$item['title']?>"><?=$item['title']?></a></td>
+                <td><a href="<?=base_url()?>catalog/<?=$item['slug']?>/" title="Подробности. <?=$item['title']?>"><?=$item['title']?></a></td>
                 <td class="td-price"><?=convertDollarToRubel($item['price'], $course)?></td>
             </tr>
             <?php } ?>
