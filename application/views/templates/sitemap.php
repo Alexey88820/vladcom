@@ -47,7 +47,7 @@
             </ul>
         <?php } ?>
     <?php } ?>
-        <li><a href="/news" title="Новости компании &quot;Владком&quot;">Новости компании</a></li>
+        <li><a href="/news/" title="Новости компании &quot;Владком&quot;">Новости компании</a></li>
     </ul>
 </div>
 

@@ -3,7 +3,7 @@
             <div class="span6">
                 <div class="footer-copyright-block">
                     <div class="footer-sitemap">
-                        <a href="/sitemap" title="Карта сайта vladcom.su">Карта сайта vladcom.su</a>
+                        <a href="/sitemap/" title="Карта сайта vladcom.su">Карта сайта vladcom.su</a>
                     </div>
                     <p class="footer-copyright">dpv &copy; <?=date('Y')?></p>
                     <div class="footer-link">
