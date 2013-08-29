@@ -39,7 +39,7 @@
                             $active = '';
                         }?>
                         <li class="<?=$active?>">
-                            <a href="<?=base_url()?><?=$nav_item['name']?>" title="<?=$nav_item['description']?>">
+                            <a href="<?=base_url()?><?=(!empty($nav_item['name'])) ? $nav_item['name'] . '/' : ''?>" title="<?=$nav_item['description']?>">
                                 <?=$nav_item['title']?>
                             </a>
                         </li>
