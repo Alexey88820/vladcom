@@ -210,9 +210,10 @@ class Catalog extends Frontend_Controller {
         $data['breadcrumbs'][3] = array('name' => $this->data['content']['item']['name'], 'link' => FALSE);
 
         if (in_array($data['content']['group']['id'], array(9, 10, 11, 12, 14, 15))) {
-            $data['noindex'] = true;
+            $data['meta']['noindex'] = true;
         }
 
+        // var_dump($data);
         view_loader($data,
                 array(
                     array(0 => 'templates', 1 => 'open_container'),

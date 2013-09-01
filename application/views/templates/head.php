@@ -8,6 +8,8 @@
     <meta name="keywords" content="<?=$meta_keywords?>" />
     <meta name="author" content="Danilov Pavel" />
 
+    <?php var_dump($noindex) ?>
+
     <?php if (isset($noindex)) : ?>
         <meta name="robots" content="none"/>
     <?php endif; ?>
