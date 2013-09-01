@@ -262,6 +262,9 @@ class Catalog extends Frontend_Controller {
         $data['breadcrumbs'][3] = array('name' => $this->data['content']['commercial_group']['title'], 'link' => base_url() . 'catalog/' . $this->data['content']['commercial_group']['slug']);
         $data['breadcrumbs'][4] = array('name' => $this->data['content']['item']['title'], 'link' => FALSE);
 
+        if (in_array($this->data['content']['item']['id'], array(6))) {
+            $data['meta']['noindex'] = true;
+        }
 
 
         view_loader($data,
