@@ -8,6 +8,10 @@
     <meta name="keywords" content="<?=$meta_keywords?>" />
     <meta name="author" content="Danilov Pavel" />
 
+    <?php if (isset($noindex)) : ?>
+        <meta name="robots" content="none"/>
+    <?php endif; ?>
+
     <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/bootstrap.min.css" media="all" />
     <!-- <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/bootstrap-responsive.css" media="all" /> -->
     <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/style.css?css=<?=time()?>" media="all" />
