@@ -7,7 +7,7 @@
                     </div>
                     <p class="footer-copyright">dpv &copy; <?=date('Y')?></p>
                     <div class="footer-link">
-                        <a href="mailto:admin@vladcom.su" title="Администратор сайта">admin@vladcom.su</a>
+                        <a href="mailto:vladcom.su@mail.ru" title="Написать письмо">vladcom.su@mail.ru</a>
                     </div>
                 </div>
             </div>

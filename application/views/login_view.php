@@ -1,6 +1,6 @@
 <?php echo validation_errors(); ?>
 <?php $attributes = array('class' => 'form-horizontal'); ?>
-<?php echo form_open('verifylogin', $attributes); ?>
+<form action="http://vladcom.su/verifylogin/" method="post" accept-charset="utf-8" class="form-horizontal">
   <legend>Авторизация</legend>
   <div class="control-group">
     <label class="control-label" for="username">Логин</label>

@@ -209,7 +209,7 @@ class Catalog extends Frontend_Controller {
         $data['breadcrumbs'][2] = array('name' => $this->data['content']['group']['name'], 'link' => base_url() . 'catalog/' . $this->data['content']['group']['slug']);
         $data['breadcrumbs'][3] = array('name' => $this->data['content']['item']['name'], 'link' => FALSE);
 
-        if (in_array($data['content']['group']['id'], array(9, 10, 11, 12, 14, 15))) {
+        if (in_array($data['content']['group']['id'], array(9, 10, 11, 12, 13, 14, 15, 16))) {
             $data['meta']['noindex'] = true;
         }
 
@@ -245,6 +245,7 @@ class Catalog extends Frontend_Controller {
         $data['breadcrumbs'][2] = array('name' => $this->data['content']['group']['name'], 'link' => base_url() . 'catalog/' . $this->data['content']['group']['slug']);
         $data['breadcrumbs'][3] = array('name' => $this->data['content']['commercial_group']['title'], 'link' => FALSE);
 
+        $data['meta']['noindex'] = true;
 
         view_loader($data,
                 array(
@@ -262,7 +263,7 @@ class Catalog extends Frontend_Controller {
         $data['breadcrumbs'][3] = array('name' => $this->data['content']['commercial_group']['title'], 'link' => base_url() . 'catalog/' . $this->data['content']['commercial_group']['slug']);
         $data['breadcrumbs'][4] = array('name' => $this->data['content']['item']['title'], 'link' => FALSE);
 
-        if (in_array($this->data['content']['item']['id'], array(6))) {
+        if (!in_array($this->data['content']['item']['id'], array(6))) {
             $data['meta']['noindex'] = true;
         }
 

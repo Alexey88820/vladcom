@@ -9,6 +9,16 @@ class Frontend_Controller extends MY_Controller
 		$server_name = $_SERVER['SERVER_NAME'];
 		$request_uri = $_SERVER['REQUEST_URI'];
 
+		// var_dump($server_name);
+
+		// if (substr($server_name, 0, 4) == 'www.') {
+		// 	$server_name = substr($server_name, 4);
+		// 	// var_dump($server_name);
+		// 	// redirect('http://' . $server_name . $request_uri, 'location', 301);
+		// }
+
+
+
 		if (strstr($request_uri, '/index.php/')) {
 			$request_uri = str_replace('/index.php/', '/', $request_uri);
 			redirect('http://' . $server_name . $request_uri, 'location', 301);

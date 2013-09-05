@@ -48,10 +48,16 @@
 $active_group = 'default';
 $active_record = TRUE;
 
+
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'CHANGEME';
-$db['default']['password'] = 'CHANGEME';
-$db['default']['database'] = 'CHANGEME';
+$db['default']['username'] = 'vladkom_main';
+$db['default']['password'] = 'x54p45q8';
+$db['default']['database'] = 'vladkom_main';
+
+// $db['default']['hostname'] = 'localhost';
+// $db['default']['username'] = 'root';
+// $db['default']['password'] = 'admin';
+// $db['default']['database'] = 'vladcom';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
