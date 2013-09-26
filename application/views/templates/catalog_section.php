@@ -15,7 +15,12 @@
 <div class="information-block">
 <?php foreach ($catalog_groups as $group) : ?>
     <div class="catalog-group section-list">
-        <a href="<?=site_url('catalog/' . $group->slug)?>/" title="<?=$group->title?>"><?=esc($group->title)?></a>
+        <a href="<?=site_url('catalog/' . $group->slug)?>/" title="<?=$group->title?>">
+            <?php if (!empty($group->img)) : ?>
+                <img class="catalog-thumb" src="<?=site_url('assets/pics/' . $group->img)?>" alt="<?=$group->title?>" title="<?=$group->title?>" />
+            <?php endif; ?>
+            <?=esc($group->title)?>
+        </a>
     </div>
 <?php endforeach; ?>
 </div>
