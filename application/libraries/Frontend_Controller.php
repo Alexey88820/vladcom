@@ -57,9 +57,9 @@ class Frontend_Controller extends MY_Controller
     }
 
     protected function _get_last_modified_header($timestamp = false) {
-        // $delay = mt_rand(2000,10000); // случайная задержка
-        // $this->output->set_header('Last-Modified: ' . gmdate('D, d M Y H:i:s\G\M\T', time() - $delay) . ' GMT');
-        // return true;
+        $delay = mt_rand(2000,10000); // случайная задержка
+        $this->output->set_header('Last-Modified: ' . gmdate('D, d M Y H:i:s\G\M\T', time() - $delay) . ' GMT');
+        return true;
 
         $if_modified_since = false;
         if (isset($_ENV['HTTP_IF_MODIFIED_SINCE'])) {

@@ -64,7 +64,6 @@ class Page extends Frontend_Controller {
     {
         $this->data['page'] = $this->page_model->get_by(array('slug' => $slug), TRUE);
 
-
         if (!count($this->data['page'])) {
             $this->_error_404();
             return false;
@@ -82,6 +81,8 @@ class Page extends Frontend_Controller {
             $this->_page();
             $this->data['subview'] = 'page';
         }
+
+        $this->data['meta_index']      = $this->data['page']->meta_index;
     }
 
     private function _route_article()
@@ -120,7 +121,9 @@ class Page extends Frontend_Controller {
 
         $this->data['catalog_groups']  = $this->catalog_group_model->get_by(array('section_id' => $this->data['catalog_section']->id));
 
-        $this->data['subview'] = 'catalog_section';
+        $this->data['subview']         = 'catalog_section';
+
+        $this->data['meta_index']      = $this->data['catalog_section']->meta_index;
     }
 
     private function _catalog_group($slug)
@@ -130,7 +133,9 @@ class Page extends Frontend_Controller {
 
         $this->data['catalog_items']   = $this->catalog_item_model->get_by(array('group_id' => $this->data['catalog_group']->id));
 
-        $this->data['subview'] = 'catalog_group';
+        $this->data['subview']         = 'catalog_group';
+
+        $this->data['meta_index']      = $this->data['catalog_group']->meta_index;
     }
 
     private function _catalog_item($slug)
@@ -140,7 +145,9 @@ class Page extends Frontend_Controller {
         $this->data['catalog_group']   = $this->catalog_group_model->get($this->data['catalog_item']->group_id, true);
         $this->data['catalog_section'] = $this->catalog_section_model->get($this->data['catalog_group']->section_id, true);
 
-        $this->data['subview'] = 'catalog_item';
+        $this->data['subview']         = 'catalog_item';
+
+        $this->data['meta_index']      = $this->data['catalog_item']->meta_index;
     }
 
     private function _catalog()
