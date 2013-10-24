@@ -19,6 +19,7 @@ function btn_delete ($uri)
 }
 
 function esc($string){
+    return $string;
     return htmlentities($string, ENT_COMPAT | ENT_HTML401, 'UTF-8');
 }
 
