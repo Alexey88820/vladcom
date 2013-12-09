@@ -11,7 +11,7 @@ class Article extends Admin_Controller
     public function index ()
     {
         // Fetch all articles
-        $this->data['articles'] = $this->news_model->get();
+        $this->data['articles'] = $this->article_model->get();
 
         // Load view
         $this->data['subview'] = 'admin/article/index';

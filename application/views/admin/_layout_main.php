@@ -9,8 +9,7 @@
 	  	<!-- Collect the nav links, forms, and other content for toggling -->
 	  	<div class="collapse navbar-collapse navbar-ex1-collapse">
 	  		<ul class="nav navbar-nav">
-		    	<li <?=$this->uri->segment(2) == 'dashboard' ? 'class="active"' : FALSE; ?>><a href="<?=site_url('admin/dashboard')?>">Главная</a></li>
-		    	<li <?=$this->uri->segment(2) == 'news' ? 'class="active"' : FALSE; ?>><?=anchor('admin/news', 'Новости')?></li>
+		    	<li <?=$this->uri->segment(2) == 'article' ? 'class="active"' : FALSE; ?>><?=anchor('admin/article', 'Новости')?></li>
 				<li class="dropdown">
 		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Каталог <b class="caret"></b></a>
 		        	<ul class="dropdown-menu">
