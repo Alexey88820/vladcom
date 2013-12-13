@@ -1,4 +1,3 @@
-</body>
 
 <script src="<?php echo site_url('assets/js/jquery-2.0.3.min.js'); ?>"></script>
 <script src="<?php echo site_url('assets/js/bootstrap.min.js'); ?>"></script>
@@ -31,6 +30,6 @@
 <noscript><div><img src="//mc.yandex.ru/watch/20691076" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-
+</body>
 
 </html>

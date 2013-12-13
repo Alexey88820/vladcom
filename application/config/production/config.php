@@ -189,7 +189,7 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = 1;
 
 /*
 |--------------------------------------------------------------------------
@@ -253,7 +253,7 @@ $config['encryption_key'] = 'gh9K*fCsZagt6dg&hjasLKVfVBNa*%f';
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
-$config['sess_cookie_name']     = 'ci_session';
+$config['sess_cookie_name']     = 'cisession';
 $config['sess_expiration']      = 0;
 $config['sess_expire_on_close'] = TRUE;
 $config['sess_encrypt_cookie']  = TRUE;

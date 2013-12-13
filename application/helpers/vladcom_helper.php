@@ -19,8 +19,10 @@ function btn_delete ($uri)
 }
 
 function esc($string){
+
+
     return $string;
-    return htmlentities($string, ENT_COMPAT | ENT_HTML401, 'UTF-8');
+    return htmlentities($string, ENT_QUOTES, 'UTF-8');
 }
 
 function get_menu ($array)
@@ -150,31 +152,28 @@ function convert_dollars_to_rubels ($money, $course = false, $output = 'both')
     }
 }
 
-function getExchangeRatesCBRF ($code, $date = NULL) {
+function getExchangeRatesCBRF ($code) {
 
-    // return 1;
+    $today = date("d/m/Y");
+    $ch = curl_init();
 
-    $client = new SoapClient("http://www.cbr.ru/DailyInfoWebServ/DailyInfo.asmx?WSDL");
-    if (!isset($date)) {
-        $date = date("Y-m-d");
+    curl_setopt($ch, CURLOPT_URL, 'http://www.cbr.ru/scripts/XML_daily.asp?date_req=' . $today);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    $output = curl_exec($ch);
+    curl_close($ch);
+
+    $response_xml = simplexml_load_string($output);
+
+    $result = false;
+
+    foreach ($response_xml as $key => $value) {
+        $arr = $value->attributes();
+        if ((isset($arr['ID'])) && ($arr['ID'] == 'R01235')) {
+            $result = $value->Value;
+        }
     }
-    $curs = $client->GetCursOnDate(array("On_date" => $date));
-    $rates = new SimpleXMLElement($curs->GetCursOnDateResult->any);
 
-    $code1 = (int)$code;
-    if ($code1!=0) {
-        $result = $rates->xpath('ValuteData/ValuteCursOnDate/Vcode[.='.$code.']/parent::*');
-    } else {
-        $result = $rates->xpath('ValuteData/ValuteCursOnDate/VchCode[.="'.$code.'"]/parent::*');
-    }
-
-    if (!$result) {
-        return false;
-    } else {
-        $vc = (float)$result[0]->Vcurs;
-        $vn = (int)$result[0]->Vnom;
-        return ($vc/$vn);
-    }
+    return $result;
 }
 
 ?>
