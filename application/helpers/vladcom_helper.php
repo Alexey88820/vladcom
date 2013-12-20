@@ -173,6 +173,8 @@ function getExchangeRatesCBRF ($code) {
         }
     }
 
+    $result = str_replace(',', '.', $result);
+
     return $result;
 }
 
